@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Form.module.css";
 import { Formik } from "formik";
 import validationSchema from "../../../helpers/validationSchema";
+import Button from "../../button/Button";
 
 const Form: React.FC = () => {
   return (
@@ -34,9 +35,7 @@ const Form: React.FC = () => {
               onBlur={handleBlur}
               onChange={handleChange}
             />
-            <button className={styles.button} type="submit">
-              Get status TTN
-            </button>
+            <Button text={"Get status TTN"} />
           </form>
         )}
       </Formik>

@@ -1,15 +1,28 @@
-.button {
-  display: block;
-  background-color: rgb(236, 65, 59);
-  color: #fff;
-  font-size: 22px;
-  font-weight: 500;
-  padding: 10px 20px;
-  border-radius: 4px;
-  border: 1px solid rgb(236, 65, 59);
-  cursor: pointer;
+.container {
+  display: flex;
 }
 
-.button:hover {
-  background-color: rgb(241, 30, 23);
+.form {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+.input {
+  height: 28px;
+  padding: 10px 12px;
+  width: 400px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  margin-right: 15px;
+  outline: none;
 }
