@@ -1,0 +1,11 @@
+.container {
+  text-align: center;
+  display: block;
+  padding: 250px 0;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(236, 65, 59);
+}
