@@ -5,7 +5,15 @@ import Status from "./status/Status";
 import History from "./history/History";
 
 const Home: React.FC = () => {
-  return <div className={styles.container}></div>;
+  return (
+    <div className={styles.container}>
+      <Form />
+      <div className={styles.result__section}>
+        <Status />
+        <History />
+      </div>
+    </div>
+  );
 };
 
 export default Home;
