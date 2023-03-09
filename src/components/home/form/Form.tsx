@@ -13,17 +13,14 @@ const Form: React.FC = () => {
         }}
         validationSchema={validationSchema}
         onSubmit={(values, { resetForm }) => {
-          console.log(values);
+          if (values.TTN.length === 14 && !isNaN(Number(values.TTN))) {
+            console.log(values);
+          } else {
+            console.log("Error! The field must be a 14 digit number");
+          }
         }}
       >
-        {({
-          values,
-          errors,
-          touched,
-          handleBlur,
-          handleChange,
-          handleSubmit,
-        }) => (
+        {({ values, errors, handleBlur, handleChange, handleSubmit }) => (
           <form className={styles.form} onSubmit={handleSubmit}>
             <p className={styles.label}>Enter TTN number:</p>
             <input
