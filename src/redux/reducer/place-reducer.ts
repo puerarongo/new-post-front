@@ -13,6 +13,7 @@ const placeReducer = createReducer(initialState, {
     state.departments = payload.departments;
   },
   [getPlaceData.rejected]: (state, { payload }) => {
+    console.log("PAYLOAD", payload);
     state.message = payload.message;
   },
 });
