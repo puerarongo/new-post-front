@@ -11,10 +11,12 @@ const placeReducer = createReducer(initialState, {
   [getPlaceData.fulfilled]: (state, { payload }) => {
     state.city = payload.city;
     state.departments = payload.departments;
+    state.message = "";
   },
   [getPlaceData.rejected]: (state, { payload }) => {
-    console.log("PAYLOAD", payload);
-    state.message = payload.message;
+    state.city = "";
+    state.departments = [];
+    state.message = payload.response.data.message;
   },
 });
 
