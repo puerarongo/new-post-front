@@ -12,3 +12,17 @@
   height: 450px;
   margin: 0 auto;
 }
+
+.list {
+  padding: 15px;
+  overflow: auto;
+}
+
+.list::-webkit-scrollbar {
+  width: 3px;
+  background-color: #fff;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background-color: rgb(236, 65, 59);
+}
