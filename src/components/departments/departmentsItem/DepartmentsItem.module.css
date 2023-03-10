@@ -1,0 +1,17 @@
+.item {
+  padding: 2px 5px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  background-color: rgb(236, 65, 59);
+  border: 1px solid rgb(236, 65, 59);
+  border-radius: 4px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.short__address {
+  margin-bottom: 5px;
+}

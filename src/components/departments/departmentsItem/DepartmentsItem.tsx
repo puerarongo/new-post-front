@@ -12,8 +12,8 @@ const DepartmentsItem: React.FC<IDepartmentsItem> = ({
 }) => {
   return (
     <li className={styles.item}>
-      <p>{address}</p>
-      <p>{description}</p>
+      <p className={styles.short__address}>Short Address: {address}</p>
+      <p className={styles.long__address}>Detail Address: {description}</p>
     </li>
   );
 };
