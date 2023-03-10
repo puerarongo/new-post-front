@@ -1,11 +1,16 @@
 import React from "react";
 import styles from "./Navigation.module.css";
 import { NavLink } from "react-router-dom";
+import svgPath from "../../helpers/svgPath";
 
 const Navigation: React.FC = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.logo__container}>logo</div>
+      <div className={styles.logo__container}>
+        <svg className={styles.svg__logo}>
+          <use href={svgPath.poshta + "#poshta"}></use>
+        </svg>
+      </div>
       <div className={styles.nav__container}>
         <NavLink to="/" className={styles.link}>
           Home

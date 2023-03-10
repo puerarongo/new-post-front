@@ -12,6 +12,13 @@
   margin-right: 25px;
 }
 
+.svg__logo {
+  display: block;
+  width: 30px;
+  height: 30px;
+  fill: rgb(236, 65, 59);
+}
+
 .nav__container {
   margin-right: auto;
 }
