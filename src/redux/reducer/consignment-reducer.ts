@@ -9,9 +9,11 @@ const initialState = {
 const consignmentReducer = createReducer(initialState, {
   [getConsignmentData.fulfilled]: (state, { payload }) => {
     state.data = payload;
+    state.message = "";
   },
   [getConsignmentData.rejected]: (state, { payload }) => {
-    state.message = payload.message;
+    state.data = "";
+    state.message = payload.response.data.message;
   },
 });
 

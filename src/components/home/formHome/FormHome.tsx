@@ -4,7 +4,13 @@ import { Formik } from "formik";
 import { ttnValidationSchema } from "../../../helpers/validationSchema";
 import Button from "../../button/Button";
 
+// * work with redux
+import { useDispatch } from "react-redux";
+import { getConsignmentData } from "../../../redux/operation/consignment-operation";
+
 const FormHome: React.FC = () => {
+  const dispatch = useDispatch();
+
   return (
     <div className={styles.container}>
       <Formik
@@ -14,7 +20,9 @@ const FormHome: React.FC = () => {
         validationSchema={ttnValidationSchema}
         onSubmit={(values, { resetForm }) => {
           if (values.TTN.length === 14 && !isNaN(Number(values.TTN))) {
-            console.log(values);
+            dispatch(getConsignmentData(values)).catch((err: Error) =>
+              console.log("formHome", err)
+            );
           } else {
             console.log("Error! The field must be a 14 digit number");
           }
