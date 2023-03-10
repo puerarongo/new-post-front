@@ -1,17 +1,17 @@
 import React from "react";
-import styles from "./Form.module.css";
+import styles from "./FormHome.module.css";
 import { Formik } from "formik";
-import validationSchema from "../../../helpers/validationSchema";
+import { ttnValidationSchema } from "../../../helpers/validationSchema";
 import Button from "../../button/Button";
 
-const Form: React.FC = () => {
+const FormHome: React.FC = () => {
   return (
     <div className={styles.container}>
       <Formik
         initialValues={{
           TTN: "",
         }}
-        validationSchema={validationSchema}
+        validationSchema={ttnValidationSchema}
         onSubmit={(values, { resetForm }) => {
           if (values.TTN.length === 14 && !isNaN(Number(values.TTN))) {
             console.log(values);
@@ -40,4 +40,4 @@ const Form: React.FC = () => {
   );
 };
 
-export default Form;
+export default FormHome;

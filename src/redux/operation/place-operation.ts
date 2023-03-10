@@ -16,6 +16,7 @@ export const getPlaceData: any = createAsyncThunk(
       return req.data;
     } catch (err) {
       console.log(err);
+      return;
     }
   }
 );
