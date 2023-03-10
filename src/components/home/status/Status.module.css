@@ -9,4 +9,29 @@
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid #fff;
+
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.container__confirm {
+  padding: 25px 10px;
+}
+
+.caption,
+.text {
+  font-size: 20px;
+  color: rgb(236, 65, 59);
+}
+
+.text {
+  font-weight: 400;
+}
+
+.text:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.caption {
+  font-weight: 500;
+  margin-right: 8px;
 }
