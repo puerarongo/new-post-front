@@ -5,7 +5,7 @@ import IPlaceBody from "../../helpers/interface/placeBody.interface";
 
 export const getPlaceData: any = createAsyncThunk(
   "place/getPlace",
-  async (body: IPlaceBody) => {
+  async (body: IPlaceBody, thunkAPI) => {
     try {
       const req = await axios({
         method: "post",
@@ -15,8 +15,7 @@ export const getPlaceData: any = createAsyncThunk(
       console.log("operation getPlace", req);
       return req.data;
     } catch (err) {
-      console.log(err);
-      return;
+      return thunkAPI.rejectWithValue(err);
     }
   }
 );
