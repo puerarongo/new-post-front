@@ -1,7 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
+import placeReducer from "./reducer/place-reducer";
+import consignmentReducer from "./reducer/consignment-reducer";
 
 const store = configureStore({
-  reducer: {},
+  reducer: {
+    place: placeReducer,
+    consignment: consignmentReducer,
+  },
   devTools: process.env.NODE_ENV === "development",
 });
 
