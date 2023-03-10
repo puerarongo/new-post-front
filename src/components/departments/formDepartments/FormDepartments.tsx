@@ -20,7 +20,7 @@ const FormDepartments: React.FC = () => {
         validationSchema={placeValidationSchema}
         onSubmit={(values, { resetForm }) => {
           dispatch(getPlaceData(values)).catch((err: Error) =>
-            console.log("form", err)
+            console.log("formDepartment", err)
           );
         }}
       >

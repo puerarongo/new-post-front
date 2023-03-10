@@ -5,7 +5,7 @@ import IConsignmentBody from "../../helpers/interface/consignmentBody.interface"
 
 export const getConsignmentData: any = createAsyncThunk(
   "consignment/getConsignment",
-  async (body: IConsignmentBody) => {
+  async (body: IConsignmentBody, thunkAPI) => {
     try {
       const req = await axios({
         method: "post",
@@ -15,7 +15,7 @@ export const getConsignmentData: any = createAsyncThunk(
       console.log("operation getConsignment", req);
       return req.data;
     } catch (err) {
-      console.log(err);
+      return thunkAPI.rejectWithValue(err);
     }
   }
 );
