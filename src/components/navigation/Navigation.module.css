@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  justify-content: center;
   align-items: center;
   background-color: #fff;
   padding: 20px 30px;
@@ -23,15 +24,12 @@
 }
 
 .svg__logo:hover {
-  transform: scale(1.3);
-}
-
-.nav__container {
-  margin-right: auto;
+  transform: scale(1.2);
 }
 
 .link {
-  font-size: 24px;
+  font-size: 22px;
+  line-height: 1.2;
   font-weight: 700;
   color: rgb(236, 65, 59);
   text-decoration: none;
@@ -46,4 +44,41 @@
 
 .link:not(:last-child) {
   margin-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    justify-content: none;
+  }
+
+  .logo__container {
+    margin-right: 30px;
+  }
+
+  .link:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  .nav__container {
+    margin-right: auto;
+  }
+
+  .link {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .svg__logo:hover {
+    transform: scale(1.3);
+  }
+
+  .logo__container {
+    margin-right: 35px;
+  }
+
+  .link:not(:last-child) {
+    margin-right: 35px;
+  }
 }
