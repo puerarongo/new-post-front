@@ -36,7 +36,7 @@ const FormDepartments: React.FC = () => {
               onBlur={handleBlur}
               onChange={handleChange}
             />
-            <Button text={"Get city departments"} />
+            <Button text={"Get city departments"} type={"submit"} />
           </form>
         )}
       </Formik>

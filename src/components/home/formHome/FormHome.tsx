@@ -44,7 +44,7 @@ const FormHome: React.FC = () => {
           value={TTN}
           onChange={handleChanhe}
         />
-        <Button text={"Get status TTN"} />
+        <Button text={"Get status TTN"} type={"submit"} />
       </form>
     </div>
   );
