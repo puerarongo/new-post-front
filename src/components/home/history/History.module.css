@@ -5,12 +5,29 @@
 
 .history__container {
   height: 400px;
-  padding: 15px 10px;
+  padding: 15px 0;
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid #fff;
 
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.history__list {
+  padding: 5px 8px;
+  text-align: center;
+  height: 280px;
+  overflow: auto;
+  margin-bottom: 15px;
+}
+
+.history__list::-webkit-scrollbar {
+  width: 3px;
+  background-color: #fff;
+}
+
+.history__list::-webkit-scrollbar-thumb {
+  background-color: rgb(236, 65, 59);
 }
 
 .title {
@@ -21,6 +38,43 @@
   color: rgb(236, 65, 59);
 }
 
+.history__item {
+  background-color: rgb(236, 65, 59);
+  border: 1px solid rgb(236, 65, 59);
+  padding: 2px 0;
+  border-radius: 5px;
+}
+
+.history__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.history__item:hover {
+  background-color: rgb(241, 30, 23);
+}
+
 .item__text {
   cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.button {
+  height: 40px;
+  display: block;
+  background-color: rgb(236, 65, 59);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid rgb(236, 65, 59);
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background-color: rgb(241, 30, 23);
 }
