@@ -12,7 +12,6 @@ export const getConsignmentData: any = createAsyncThunk(
         url: `${BASE_URL}/consignment`,
         data: body,
       });
-      console.log("operation getConsignment", req);
       return req.data;
     } catch (err) {
       return thunkAPI.rejectWithValue(err);
