@@ -13,8 +13,8 @@ const historySlice = createSlice({
   initialState,
   reducers: {
     historyAdd: (state, action) => {
-      const { history } = action.payload;
-      state.history.push(history);
+      const { TTN } = action.payload;
+      if (!state.history.includes(TTN)) state.history.push(TTN);
     },
 
     historyDelete: () => initialState,
