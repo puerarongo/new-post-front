@@ -3,6 +3,18 @@
 }
 
 .result__section {
-  display: flex;
-  padding: 80px 0 100px;
+  display: block;
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .result__section {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200) {
+  .result__section {
+    padding: 80px 0 100px;
+  }
 }

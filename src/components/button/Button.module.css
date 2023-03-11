@@ -1,9 +1,11 @@
 .button {
-  height: 50px;
-  display: block;
+  display: flex;
+  margin: 0 auto;
+  height: 40px;
   background-color: rgb(236, 65, 59);
   color: #fff;
-  font-size: 22px;
+  font-size: 18px;
+  line-height: 1.1;
   font-weight: 500;
   padding: 10px 20px;
   border-radius: 4px;
@@ -17,4 +19,18 @@
 .button:hover,
 .button:active {
   background-color: rgb(241, 30, 23);
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    display: block;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button {
+    font-size: 22px;
+  }
 }
