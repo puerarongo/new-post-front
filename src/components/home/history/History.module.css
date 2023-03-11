@@ -78,3 +78,15 @@
 .button:active {
   background-color: rgb(241, 30, 23);
 }
+
+.no__history {
+  margin-top: 90px;
+  padding: 0 10px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(236, 65, 59);
+}

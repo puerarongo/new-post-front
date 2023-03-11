@@ -35,3 +35,15 @@
   font-weight: 500;
   margin-right: 8px;
 }
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(236, 65, 59);
+}
+
+.start__container {
+  text-align: center;
+  margin-top: 120px;
+  padding: 0 20px;
+}

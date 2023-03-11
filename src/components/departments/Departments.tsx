@@ -35,7 +35,7 @@ const Departments: React.FC = () => {
               )}
             </ul>
           ) : !place.city && place.message ? (
-            <div className={styles.error__container}>
+            <div className={styles.start__container}>
               <h2 className={styles.title}>{place.message}</h2>
             </div>
           ) : (
