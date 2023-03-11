@@ -31,9 +31,15 @@ const Status: React.FC<IConsignment> = ({ consignment }) => {
             </p>
           </div>
         ) : !data.TTN && message ? (
-          <div className={styles.container__error}>b</div>
+          <div className={styles.start__container}>
+            <h2 className={styles.title}>{message}</h2>
+          </div>
         ) : (
-          <div className={styles.container__start}>c</div>
+          <div className={styles.start__container}>
+            <h2 className={styles.title}>
+              Enter the consignment number in the form to receive information
+            </h2>
+          </div>
         )}
       </div>
     </div>

@@ -42,9 +42,11 @@ const History: React.FC = () => {
             </button>
           </>
         ) : (
-          <p className={styles.subtitle}>
-            You don't have an consignment viewer history yet
-          </p>
+          <div className={styles.no__history}>
+            <p className={styles.subtitle}>
+              You don't have an consignment viewer history yet
+            </p>
+          </div>
         )}
       </div>
     </div>
