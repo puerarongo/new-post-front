@@ -1,11 +1,15 @@
 import React from "react";
 import styles from "./History.module.css";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { valueActions } from "../../../redux/slices/valueSlice";
 
 const History: React.FC = () => {
+  const dispatch = useDispatch();
   const history = useSelector((state: any) => state.history.history);
 
-  console.log("in history", history);
+  const clickHandler = (e: any) => {
+    dispatch(valueActions.valueAdd({ value: e.target.textContent }));
+  };
 
   return (
     <div className={styles.container}>
@@ -16,7 +20,9 @@ const History: React.FC = () => {
             {history.map((el: string, index: number) => {
               return (
                 <li className={styles.history__item} key={index}>
-                  <p className={styles.item__text}>{el}</p>
+                  <p className={styles.item__text} onClick={clickHandler}>
+                    {el}
+                  </p>
                 </li>
               );
             })}
