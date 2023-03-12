@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Departments.module.css";
 import FormDepartments from "./formDepartments/FormDepartments";
+import Loader from "../loader/Loader";
 import { useSelector, useDispatch } from "react-redux";
 import DepartmentsItem from "./departmentsItem/DepartmentsItem";
 import IDataDepartments from "../../helpers/interface/dataDepartments.interface";
@@ -42,14 +43,18 @@ const Departments: React.FC = () => {
                 </li>
               )}
               <li>
-                <button
-                  className={styles.button}
-                  type="button"
-                  onClick={viewMore}
-                  disabled={place.departments.length === value}
-                >
-                  Показати більше
-                </button>
+                {!place.loading ? (
+                  <button
+                    className={styles.button}
+                    type="button"
+                    onClick={viewMore}
+                    disabled={place.departments.length === value}
+                  >
+                    Показати більше
+                  </button>
+                ) : (
+                  <Loader width={30} height={30} />
+                )}
               </li>
             </ul>
           ) : !place.city && place.message ? (
