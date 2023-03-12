@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Departments.module.css";
 import FormDepartments from "./formDepartments/FormDepartments";
 import { useSelector, useDispatch } from "react-redux";
@@ -7,13 +7,14 @@ import IDataDepartments from "../../helpers/interface/dataDepartments.interface"
 import { getPlaceData } from "../../redux/operation/place-operation";
 
 const Departments: React.FC = () => {
+  const [value, setValue] = useState<number>(0);
   const dispatch = useDispatch();
   const place = useSelector((state: any) => state.place);
 
   const viewMore = () => {
     const page = Math.floor(place.departments.length / 50) + 1;
     dispatch(getPlaceData({ city: place.city, page }));
-    console.log(place.departments.length);
+    setValue(place.departments.length);
   };
 
   return (
@@ -45,6 +46,7 @@ const Departments: React.FC = () => {
                   className={styles.button}
                   type="button"
                   onClick={viewMore}
+                  disabled={place.departments.length === value}
                 >
                   View More
                 </button>
