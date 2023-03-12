@@ -19,7 +19,7 @@ const History: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.history__container}>
-        <h2 className={styles.title}>History</h2>
+        <h2 className={styles.title}>Історія</h2>
         {history.length > 0 ? (
           <>
             <ul className={styles.history__list}>
@@ -38,7 +38,7 @@ const History: React.FC = () => {
               type="button"
               onClick={buttonHandler}
             >
-              Clear history
+              Очистити історію
             </button>
           </>
         ) : (

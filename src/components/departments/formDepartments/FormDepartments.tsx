@@ -25,7 +25,7 @@ const FormDepartments: React.FC = () => {
       >
         {({ values, errors, handleBlur, handleChange, handleSubmit }) => (
           <form className={styles.form} onSubmit={handleSubmit}>
-            <p className={styles.label}>Enter the City Name:</p>
+            <p className={styles.label}>Введіть назву міста:</p>
             <input
               className={styles.input}
               type="text"
@@ -35,7 +35,7 @@ const FormDepartments: React.FC = () => {
               onBlur={handleBlur}
               onChange={handleChange}
             />
-            <Button text={"Get city departments"} type={"submit"} />
+            <Button text={"Назва міста"} type={"submit"} />
           </form>
         )}
       </Formik>

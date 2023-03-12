@@ -18,15 +18,15 @@ const Status: React.FC<IConsignment> = ({ consignment }) => {
         {data.TTN && !message ? (
           <div className={styles.container__confirm}>
             <p className={styles.text}>
-              <span className={styles.caption}>Delivery status:</span>
+              <span className={styles.caption}>Статус доставки:</span>
               {data.status}
             </p>
             <p className={styles.text}>
-              <span className={styles.caption}>Send:</span>
+              <span className={styles.caption}>Відправлено:</span>
               {data.citySender}. {data.addressSender}
             </p>
             <p className={styles.text}>
-              <span className={styles.caption}>Received:</span>
+              <span className={styles.caption}>Отримано:</span>
               {data.cityRecipient}. {data.addressReipient}
             </p>
           </div>
@@ -37,7 +37,7 @@ const Status: React.FC<IConsignment> = ({ consignment }) => {
         ) : (
           <div className={styles.start__container}>
             <h2 className={styles.title}>
-              Enter the consignment number in the form to receive information
+              Введіть номер вантажу в форму для отримання інформації
             </h2>
           </div>
         )}

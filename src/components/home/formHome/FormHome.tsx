@@ -28,22 +28,22 @@ const FormHome: React.FC = () => {
     if (TTN.length === 14 && !isNaN(Number(TTN))) {
       dispatch(getConsignmentData({ TTN }));
     } else {
-      Notify.failure("Error! The field must be a 14 digit number");
+      Notify.failure("Помилка! Поле має бути 14-значним числом");
     }
   };
 
   return (
     <div className={styles.container}>
       <form className={styles.form} onSubmit={handleSubmit}>
-        <p className={styles.label}>Enter TTN number:</p>
+        <p className={styles.label}>Введіть номер ТТН:</p>
         <input
           className={styles.input}
           type="text"
-          placeholder="14 symbols..."
+          placeholder="14 символів..."
           value={TTN}
           onChange={handleChanhe}
         />
-        <Button text={"Get status TTN"} type={"submit"} />
+        <Button text={"Отримати статус ТТН"} type={"submit"} />
       </form>
     </div>
   );

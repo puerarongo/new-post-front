@@ -38,7 +38,7 @@ const Departments: React.FC = () => {
                 )
               ) : (
                 <li>
-                  <h2>There are no departments available in this city!</h2>
+                  <h2>У цьому місті немає відділень Нової Пошти!</h2>
                 </li>
               )}
               <li>
@@ -48,7 +48,7 @@ const Departments: React.FC = () => {
                   onClick={viewMore}
                   disabled={place.departments.length === value}
                 >
-                  View More
+                  Показати більше
                 </button>
               </li>
             </ul>
@@ -59,8 +59,8 @@ const Departments: React.FC = () => {
           ) : (
             <div className={styles.start__container}>
               <h2 className={styles.title}>
-                Enter name of the city to see the working departments of Nova
-                Poshta in this city!
+                Введіть назву міста, щоб побачити робочі відділення Нової Пошти
+                у цьому місті!
               </h2>
             </div>
           )}
