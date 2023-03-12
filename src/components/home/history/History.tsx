@@ -44,7 +44,7 @@ const History: React.FC = () => {
         ) : (
           <div className={styles.no__history}>
             <p className={styles.subtitle}>
-              You don't have an consignment viewer history yet
+              У вас ще немає історії перегляду накладних
             </p>
           </div>
         )}
