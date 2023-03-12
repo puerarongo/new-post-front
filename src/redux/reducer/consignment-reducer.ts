@@ -12,8 +12,8 @@ const consignmentReducer = createReducer(initialState, {
     state.message = "";
   },
   [getConsignmentData.rejected]: (state, { payload }) => {
-    state.data = "";
-    state.message = payload.response.data.message;
+    state.data = {};
+    state.message = payload;
   },
 });
 

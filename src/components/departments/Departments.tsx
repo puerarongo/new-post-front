@@ -7,7 +7,6 @@ import IDataDepartments from "../../helpers/interface/dataDepartments.interface"
 
 const Departments: React.FC = () => {
   const place = useSelector((state: any) => state.place);
-  console.log(place);
 
   return (
     <div className={styles.container}>

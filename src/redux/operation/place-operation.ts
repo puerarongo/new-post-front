@@ -2,6 +2,7 @@ import axios from "axios";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import BASE_URL from "../../helpers/urlPath";
 import IPlaceBody from "../../helpers/interface/placeBody.interface";
+import { Notify } from "notiflix/build/notiflix-notify-aio";
 
 export const getPlaceData: any = createAsyncThunk(
   "place/getPlace",
@@ -12,10 +13,11 @@ export const getPlaceData: any = createAsyncThunk(
         url: `${BASE_URL}/places`,
         data: body,
       });
-      console.log("operation getPlace", req);
       return req.data;
-    } catch (err) {
-      return thunkAPI.rejectWithValue(err);
+    } catch (err: any) {
+      const message = err.response.data.message;
+      Notify.failure(message);
+      return thunkAPI.rejectWithValue(message);
     }
   }
 );

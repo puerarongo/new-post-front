@@ -2,6 +2,7 @@ import axios from "axios";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import BASE_URL from "../../helpers/urlPath";
 import IConsignmentBody from "../../helpers/interface/consignmentBody.interface";
+import { Notify } from "notiflix/build/notiflix-notify-aio";
 
 export const getConsignmentData: any = createAsyncThunk(
   "consignment/getConsignment",
@@ -13,8 +14,10 @@ export const getConsignmentData: any = createAsyncThunk(
         data: body,
       });
       return req.data;
-    } catch (err) {
-      return thunkAPI.rejectWithValue(err);
+    } catch (err: any) {
+      const message = err.response.data.message;
+      Notify.failure(message);
+      return thunkAPI.rejectWithValue(message);
     }
   }
 );

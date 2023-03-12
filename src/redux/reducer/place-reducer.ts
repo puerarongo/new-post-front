@@ -16,7 +16,7 @@ const placeReducer = createReducer(initialState, {
   [getPlaceData.rejected]: (state, { payload }) => {
     state.city = "";
     state.departments = [];
-    state.message = payload.response.data.message;
+    state.message = payload;
   },
 });
 
