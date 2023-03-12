@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  text-align: center;
+}
+
+.loader__container {
+  margin-right: auto;
+  margin-left: auto;
+}
