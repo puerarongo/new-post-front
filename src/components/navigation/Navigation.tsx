@@ -13,10 +13,10 @@ const Navigation: React.FC = () => {
       </div>
       <div className={styles.nav__container}>
         <NavLink to="/" className={styles.link}>
-          Home
+          Головна
         </NavLink>
         <NavLink to="/departments" className={styles.link}>
-          Departments
+          Відділення
         </NavLink>
       </div>
     </header>
