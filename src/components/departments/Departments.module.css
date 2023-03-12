@@ -66,6 +66,13 @@
   background-color: rgb(241, 30, 23);
 }
 
+.button:disabled,
+.button:disabled:hover {
+  background-color: rgb(236, 65, 59, 30%);
+  border: none;
+  cursor: auto;
+}
+
 @media screen and (min-width: 768px) {
   .container__into {
     width: 600px;
