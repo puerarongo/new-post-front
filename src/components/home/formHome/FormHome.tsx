@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./FormHome.module.css";
 import Button from "../../button/Button";
+import { Notify } from "notiflix/build/notiflix-notify-aio";
 
 // * work with redux
 import { useDispatch, useSelector } from "react-redux";
@@ -25,11 +26,9 @@ const FormHome: React.FC = () => {
   const handleSubmit = (e?: any) => {
     e.preventDefault();
     if (TTN.length === 14 && !isNaN(Number(TTN))) {
-      dispatch(getConsignmentData({ TTN })).catch((err: Error) =>
-        console.log("formHome", err)
-      );
+      dispatch(getConsignmentData({ TTN }));
     } else {
-      console.log("Error! The field must be a 14 digit number");
+      Notify.failure("Error! The field must be a 14 digit number");
     }
   };
 
