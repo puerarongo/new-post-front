@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-import styles from "./FormHome.module.css";
-import Button from "../../button/Button";
 import { Notify } from "notiflix/build/notiflix-notify-aio";
-
-// * work with redux
+import { debounce } from "lodash";
 import { useDispatch, useSelector } from "react-redux";
 import { getConsignmentData } from "../../../redux/operation/consignment-operation";
+import Button from "../../button/Button";
+import styles from "./FormHome.module.css";
 
 const FormHome: React.FC = () => {
   const [TTN, setTTN] = useState<any>("");
@@ -19,9 +18,9 @@ const FormHome: React.FC = () => {
     }
   }, [value, dispatch]);
 
-  const handleChanhe = (e: any) => {
-    setTTN(e.currentTarget.value);
-  };
+  const handleChange = (e: any) => setTTN(e.target.value);
+
+  const debounceChange = debounce(handleChange, 200);
 
   const handleSubmit = (e?: any) => {
     e.preventDefault();
@@ -40,8 +39,7 @@ const FormHome: React.FC = () => {
           className={styles.input}
           type="text"
           placeholder="14 символів..."
-          value={TTN}
-          onChange={handleChanhe}
+          onChange={debounceChange}
         />
         <Button text={"Отримати статус ТТН"} type={"submit"} />
       </form>

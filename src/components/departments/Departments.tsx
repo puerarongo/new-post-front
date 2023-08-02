@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import styles from "./Departments.module.css";
-import FormDepartments from "./formDepartments/FormDepartments";
-import Loader from "../loader/Loader";
 import { useSelector, useDispatch } from "react-redux";
-import DepartmentsItem from "./departmentsItem/DepartmentsItem";
 import IDataDepartments from "../../helpers/interface/dataDepartments.interface";
 import { getPlaceData } from "../../redux/operation/place-operation";
+import FormDepartments from "./formDepartments/FormDepartments";
+import DepartmentsItem from "./departmentsItem/DepartmentsItem";
+import Loader from "../loader/Loader";
+import styles from "./Departments.module.css";
 
 const Departments: React.FC = () => {
   const [value, setValue] = useState<number>(0);
@@ -19,7 +19,7 @@ const Departments: React.FC = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <FormDepartments />
       <div className={styles.container__result}>
         <div className={styles.container__into}>
@@ -71,7 +71,7 @@ const Departments: React.FC = () => {
           )}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

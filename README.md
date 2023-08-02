@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+Про нас: ми дуже амбіційна невелика компанія, яка розробляє як свої власні продукти, так і зовнішні. Ми шукаємо людей, які дуже люблять свою справу і готові розвиватися та зростати разом з нами
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Вимоги:
+JavaScript - високий рівень розуміння базового JS та його основних концепцій;
 
-## Available Scripts
+HTTP - знання протоколу та його типів GET, POST, PUT DELETE, знання основ REST API;
 
-In the project directory, you can run:
+React js - знання на базовому рівні;
 
-### `npm start`
+Redux js - знання на базовому рівні;
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Material ui - початкові знання;
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Webpack - початкові знання;
 
-### `npm test`
+Create React App - початкові знання;
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Git - впевнене володіння та розуміння;
 
-### `npm run build`
+English level - Pre-intermediate або вище, бажання покращувати мову.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Буде дуже великим плюсом:
+Бажання вивчити Node JS, Nest JS, PostgreSQL, Docker, Mongo DB (навчання та допомогу гарантуємо) ;
+Вміння самостійно навчатися та вирішувати поставлені завдання.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Ми пропонуємо:
+Стабільну заробітну плату в валюті;
+Навчання в процесі роботи та консультації від senior розробника;
+Перегляд заробітної плати кожні півроку.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Процес прийому на роботу:
 
-### `npm run eject`
+Тестові завдання: https://docs.google.com/presentation/d/1ijcRHtZ6GhJphTsFL9JJOrEPKGCI9EykAyqyxfyWnCA/edit?usp=sharing
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Технічна співбесіда в Zoom або Google Meet.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Контакти у Telegram та Viber за номером: +380735070005

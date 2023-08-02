@@ -1,7 +1,4 @@
 .header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #fff;
   padding: 20px 30px;
   margin-bottom: 30px;
@@ -9,8 +6,15 @@
   box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
 }
 
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo__container {
   margin-right: 25px;
+  cursor: pointer;
 }
 
 .svg__logo {

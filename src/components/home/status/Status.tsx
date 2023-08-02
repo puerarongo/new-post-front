@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./Status.module.css";
-import Loader from "../../loader/Loader";
 import IDataConsignment from "../../../helpers/interface/dataConsignment.interface";
+import Loader from "../../loader/Loader";
+import styles from "./Status.module.css";
 
 interface IConsignment {
   consignment: {

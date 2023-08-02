@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./History.module.css";
 import { useSelector, useDispatch } from "react-redux";
 import { valueActions } from "../../../redux/slices/valueSlice";
 import { historyActions } from "../../../redux/slices/historySlice";
+import styles from "./History.module.css";
 
 const History: React.FC = () => {
   const dispatch = useDispatch();
