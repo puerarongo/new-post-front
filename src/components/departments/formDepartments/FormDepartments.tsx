@@ -1,12 +1,10 @@
 import React from "react";
-import styles from "../../home/formHome/FormHome.module.css";
 import { Formik } from "formik";
 import { placeValidationSchema } from "../../../helpers/validationSchema";
-import Button from "../../button/Button";
-
-// * work with redux
 import { useDispatch } from "react-redux";
 import { getPlaceData } from "../../../redux/operation/place-operation";
+import Button from "../../button/Button";
+import styles from "../../home/formHome/FormHome.module.css";
 
 const FormDepartments: React.FC = () => {
   const dispatch = useDispatch();

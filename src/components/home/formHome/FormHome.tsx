@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
-import styles from "./FormHome.module.css";
-import Button from "../../button/Button";
 import { Notify } from "notiflix/build/notiflix-notify-aio";
 import { debounce } from "lodash";
-
-// * work with redux
 import { useDispatch, useSelector } from "react-redux";
 import { getConsignmentData } from "../../../redux/operation/consignment-operation";
+import Button from "../../button/Button";
+import styles from "./FormHome.module.css";
 
 const FormHome: React.FC = () => {
   const [TTN, setTTN] = useState<any>("");
