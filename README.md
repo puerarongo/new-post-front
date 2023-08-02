@@ -1,37 +1,3 @@
-Про нас: ми дуже амбіційна невелика компанія, яка розробляє як свої власні продукти, так і зовнішні. Ми шукаємо людей, які дуже люблять свою справу і готові розвиватися та зростати разом з нами
+App Description
 
-Вимоги:
-JavaScript - високий рівень розуміння базового JS та його основних концепцій;
-
-HTTP - знання протоколу та його типів GET, POST, PUT DELETE, знання основ REST API;
-
-React js - знання на базовому рівні;
-
-Redux js - знання на базовому рівні;
-
-Material ui - початкові знання;
-
-Webpack - початкові знання;
-
-Create React App - початкові знання;
-
-Git - впевнене володіння та розуміння;
-
-English level - Pre-intermediate або вище, бажання покращувати мову.
-
-Буде дуже великим плюсом:
-Бажання вивчити Node JS, Nest JS, PostgreSQL, Docker, Mongo DB (навчання та допомогу гарантуємо) ;
-Вміння самостійно навчатися та вирішувати поставлені завдання.
-
-Ми пропонуємо:
-Стабільну заробітну плату в валюті;
-Навчання в процесі роботи та консультації від senior розробника;
-Перегляд заробітної плати кожні півроку.
-
-Процес прийому на роботу:
-
-Тестові завдання: https://docs.google.com/presentation/d/1ijcRHtZ6GhJphTsFL9JJOrEPKGCI9EykAyqyxfyWnCA/edit?usp=sharing
-
-Технічна співбесіда в Zoom або Google Meet.
-
-Контакти у Telegram та Viber за номером: +380735070005
+Applications for viewing the status of parcels of Nova Poshta, as well as post offices in other cities. Implemented both backend and frontend
